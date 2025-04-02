@@ -1,15 +1,15 @@
 from telebot import TeleBot
 
 import config
-from commands_handlers.register import register_commands_handler
-from data_base.callback_handler_of_genres import register_callback_genre
+from commands_handlers.register import (register_callback_query,
+                                        register_commands_handler)
 
 bot = TeleBot(config.BOT_TOKEN)
 
 
 def register_handlers():
     register_commands_handler(bot)
-    register_callback_genre(bot)
+    register_callback_query(bot)
 
 
 register_handlers()

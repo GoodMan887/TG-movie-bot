@@ -1,12 +1,12 @@
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 import config
-# from config import callback_data_buttons
 
 
 def genre_kb():
+    """Создаёт клавиатуру с кнопками для выбора жанра."""
     markup = InlineKeyboardMarkup()
     markup.add(*[InlineKeyboardButton(
         text=button,
-        callback_data=f"genre_{button}") for button in config.buttons])
+        callback_data=f"genre_{button.lower()}") for button in config.buttons])
     return markup
