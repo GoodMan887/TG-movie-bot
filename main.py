@@ -1,7 +1,7 @@
 from telebot import TeleBot
 
 import config
-from database import keep_alive
+import keep_alive
 from commands_handlers.register import (register_callback_query,
                                         register_commands_handler)
 
