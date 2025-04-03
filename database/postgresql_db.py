@@ -5,13 +5,13 @@ import psycopg2
 
 def connect_db():
     """Устанавливает подключение к БД."""
-    return psycopg2.connect(
-    dbname=os.getenv("DATABASE_NAME"),
-    user=os.getenv("DATABASE_USER"),
-    password=os.getenv("DATABASE_PASSWORD"),
-    host=os.getenv("DATABASE_HOST"),
-    port=os.getenv("DATABASE_PORT")
-    )
+    return psycopg2.connect(os.getenv("DATABASE_URL"))
+    # dbname=os.getenv("DATABASE_NAME"),
+    # user=os.getenv("DATABASE_USER"),
+    # password=os.getenv("DATABASE_PASSWORD"),
+    # host=os.getenv("DATABASE_HOST"),
+    # port=os.getenv("DATABASE_PORT")
+    # )
 
 
 def get_movies_by_genre(genre_name):
