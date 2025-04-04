@@ -10,7 +10,7 @@ def handle_command_start(message: types.Message, bot: TeleBot):
     """
     markup = types.ReplyKeyboardMarkup(
         resize_keyboard=True,
-        one_time_keyboard=True
+        one_time_keyboard=False
     )
     markup.add(key_board_buttons['genre'], key_board_buttons['top_3'])
     markup.add(key_board_buttons['random_movie'])
