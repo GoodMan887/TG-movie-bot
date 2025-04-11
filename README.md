@@ -18,11 +18,13 @@
 
 ## Скриншоты
 
-### Старт
-![Начало работы](images/start.jpg)
+<h3>Старт</h3>
+<img src="images/start.jpg" width="45%">
 
-### Рандомный фильм
-![Рандом](images/random_movie.jpg)
+<h3>Рандомный фильм</h3>
+<img src="images/random_movie.jpg" width="45%">
 
-### Рекомендация по жанру
-![Начало работы](images/choose_genre.jpg), ![Начало работы](images/genre_movie.jpg)
+<h3>Рекомендация по жанру</h3>
+<img src="images/choose_genre.jpg" width="45%">
+
+<img src="images/genre_movie.jpg" width="45%">
